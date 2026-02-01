@@ -1,0 +1,18 @@
+---
+const { Element = 'div' } = Astro.props;
+---
+
+<Element class="auto-grid">
+  <slot />
+</Element>
+
+<style>
+  .auto-grid {
+    display: grid;
+    grid-template-columns: repeat(
+      var(--grid-type, auto-fit),
+      minmax(var(--grid-min-size, 30ch), 1fr)
+    );
+    grid-gap: calc(var(--grid-gap, 3) * var(--flow-space));
+  }
+</style>

@@ -1,25 +1,16 @@
 ---
-import { client } from "../../tina/__generated__/client";
-// import { MyComponent } from '../components/react'
-const response = await client.queries.post({ relativePath: "hello-world.md" });
-const responseAbc = await client.queries.abc({
-    relativePath: "First-abc.md",
-});
-const responseAbcs = await client.queries.abcConnection();
-console.log(responseAbcs);
+import { client } from '../../tina/__generated__/client';
+import AutoGrid from '../components/auto-grid.astro';
+import BaseLayout from '../layouts/base.astro';
+
+const coffeesResponse = await client.queries.coffeeConnection();
+const coffees = coffeesResponse.data.coffeeConnection.edges;
+console.log(coffees);
 ---
 
-<html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-        <link rel="icon" href="/favicon.ico" />
-        <meta name="viewport" content="width=device-width" />
-        <meta name="generator" content={Astro.generator} />
-        <title>Astro</title>
-    </head>
-    <body>
-        <h1>Astro</h1>
-        <div>{JSON.stringify(responseAbcs.data)}</div>
-    </body>
-</html>
+<BaseLayout title="Coffee home">
+    <AutoGrid>
+        {coffees?.map((coffee) => <p>{coffee?.node?.title}</p>)}
+        <!-- {coffees?.map((coffee) => <Card coffee={coffee} />)} -->
+    </AutoGrid>
+</BaseLayout>

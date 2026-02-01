@@ -1,0 +1,43 @@
+---
+
+---
+
+<header role="banner">
+    <nav aria-label="Global navigation">
+        <a href="/">Home</a>
+        <ul>
+            <li>About</li>
+            <li>Blog</li>
+            <li>Search</li>
+            <li>Suppliers</li>
+            <li>GitHub</li>
+        </ul>
+    </nav>
+</header>
+
+<style>
+    header {
+        background: var(--stone-2);
+        padding: var(--size-4);
+        overflow: hidden;
+        clip-path: polygon(
+            0 1rem,
+            1rem 0,
+            100% 0,
+            100% 0%,
+            100% 100%,
+            0% 100%,
+            0 100%,
+            0% 100%,
+            0% 0%
+        );
+    }
+    nav {
+        display: flex;
+    }
+    ul {
+        display: flex;
+        margin-inline-start: auto;
+        list-style-type: none;
+    }
+</style>
