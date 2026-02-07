@@ -1,5 +1,6 @@
 import { defineConfig } from 'tinacms';
-import { schema } from './schema';
+import { coffee } from './schema/collections/coffee';
+import { supplier } from './schema/collections/supplier';
 
 // Your hosting provider likely exposes this as an environment variable
 const branch =
@@ -26,5 +27,10 @@ export default defineConfig({
     },
   },
   // See docs on content modeling for more info on how to setup new content models: https://tina.io/docs/r/content-modelling-collections/
-  schema,
+  schema: {
+    collections: [
+      coffee,
+      supplier
+    ]
+  },
 });
