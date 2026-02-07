@@ -1,16 +1,29 @@
 ---
+import { getCollection } from 'astro:content';
 import { client } from '../../tina/__generated__/client';
 import AutoGrid from '../components/auto-grid.astro';
 import BaseLayout from '../layouts/base.astro';
 
-const coffeesResponse = await client.queries.coffeeConnection();
-const coffees = coffeesResponse.data.coffeeConnection.edges;
-console.log(coffees);
+// const coffeesResponse = await client.queries.coffeeConnection();
+// const coffees = coffeesResponse.data.coffeeConnection.edges;
+// const coffees = [];
+const coffees = await getCollection('coffee');
+// console.log(coffees);
 ---
 
 <BaseLayout title="Coffee home">
     <AutoGrid>
-        {coffees?.map((coffee) => <p>{coffee?.node?.title}</p>)}
+        {
+            coffees?.map((coffee) => (
+                <div class="p-4 bg-red-200 w-fit">
+                    <>
+                        <p>{coffee?.id}</p>
+                        <p>{coffee?.data.title}</p>
+                    </>
+                </div>
+            ))
+        }
+        <!-- {coffees?.map((coffee) => <p>{coffee?.node?.title}</p>)} -->
         <!-- {coffees?.map((coffee) => <Card coffee={coffee} />)} -->
     </AutoGrid>
 </BaseLayout>
