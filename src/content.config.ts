@@ -1,5 +1,5 @@
-import { defineCollection, z } from "astro:content";
-import client from "../tina/__generated__/client";
+import { defineCollection, z } from 'astro:content';
+import client from '../tina/__generated__/client';
 
 const coffee = defineCollection({
   loader: async () => {
@@ -10,11 +10,11 @@ const coffee = defineCollection({
       ?.filter((post) => !!post)
       .map((post) => {
         const node = post?.node;
-        console.log(node)
+        console.log(node);
         return {
           ...node,
           // id: node?._sys.relativePath.replace(/\.mdx?$/, ""), // Generate clean URLs
-          id: node?._sys.relativePath.replace(node?._sys.extension, ""), // Generate clean URLs
+          id: node?._sys.relativePath.replace(node?._sys.extension, ''), // Generate clean URLs
           tinaInfo: node?._sys, // Include Tina system info if needed
         };
       });

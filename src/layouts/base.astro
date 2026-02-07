@@ -1,14 +1,14 @@
 ---
-import Footer from "../components/footer.astro";
-import Head from "../components/head.astro";
-import Header from "../components/header.astro";
-import Main from "../components/main.astro";
+import Footer from '../components/footer.astro';
+import Head from '../components/head.astro';
+import Header from '../components/header.astro';
+import Main from '../components/main.astro';
 
 // TODO use page title and description from site config?
-const defaultTitle = "My coffee bean blog";
-const defaultDescription = "Catalogue of coffee beans";
+const defaultTitle = 'My coffee bean blog';
+const defaultDescription = 'Catalogue of coffee beans';
 const { title, description } = Astro.props;
-const metaTitle = [title, defaultTitle].filter((x) => x).join(" - ");
+const metaTitle = [title, defaultTitle].filter((x) => x).join(' - ');
 ---
 
 <!doctype html>
