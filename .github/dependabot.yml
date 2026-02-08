@@ -1,11 +1,12 @@
 version: 2
+on:
+  workflow_dispatch:
 updates:
   - package-ecosystem: "npm"
     directory: "/"
     schedule:
       interval: "daily"
-      # day: "sunday"
-      time: "21:00"
+      time: "02:00"
     groups:
       production-dependencies::
         dependency-type: "production"
