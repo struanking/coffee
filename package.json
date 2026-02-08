@@ -11,7 +11,7 @@
     "lint:fix": "exec biome check --write",
     "lint:staged": "exec biome check --staged --write --no-errors-on-unmatched",
     "prepare": "husky",
-    "tokens": "style-dictionary build"
+    "tokens": "style-dictionary build --config style-dictionary/config.json"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.18",
