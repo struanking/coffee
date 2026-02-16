@@ -1,0 +1,29 @@
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+
+@theme {
+  --color-black: hsl(0, 0%, 0%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-grey-100: hsl(40, 100%, 97%);
+  --color-grey-200: hsl(39, 96%, 89%);
+  --color-grey-300: hsl(38, 93%, 77%);
+  --color-grey-400: hsl(33, 90%, 65%);
+  --color-grey-500: hsl(27, 84%, 57%);
+  --color-grey-600: hsl(24, 75%, 50%);
+  --color-grey-700: hsl(20, 71%, 44%);
+  --color-grey-800: hsl(16, 65%, 37%);
+  --color-grey-900: hsl(14, 61%, 30%);
+  --spacing-0: 0;
+  --spacing-1: 0.25rem;
+  --spacing-2: 0.5rem;
+  --spacing-3: 0.75rem;
+  --spacing-4: 1rem;
+  --spacing-5: 1.5rem;
+  --spacing-6: 2rem;
+  --spacing-7: 2.75rem;
+  --spacing-8: 3.5rem;
+  --spacing-9: 7rem;
+  --spacing-10: 14rem;
+  --spacing-max: 624.9375rem;
+}

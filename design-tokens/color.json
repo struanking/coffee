@@ -1,0 +1,119 @@
+{
+  "color": {
+    "$type": "color",
+    "black": {
+      "$value": "#000000"
+    },
+    "white": {
+      "$value": "#ffffff"
+    },
+    "brown": {
+      "0": {
+        "value": "#faf4eb",
+        "type": "color"
+      },
+      "1": {
+        "value": "#ede0d1",
+        "type": "color"
+      },
+      "2": {
+        "value": "#e0cab7",
+        "type": "color"
+      },
+      "3": {
+        "value": "#d3b79e",
+        "type": "color"
+      },
+      "4": {
+        "value": "#c5a285",
+        "type": "color"
+      },
+      "5": {
+        "value": "#b78f6d",
+        "type": "color"
+      },
+      "6": {
+        "value": "#a87c56",
+        "type": "color"
+      },
+      "7": {
+        "value": "#956b47",
+        "type": "color"
+      },
+      "8": {
+        "value": "#825b3a",
+        "type": "color"
+      },
+      "9": {
+        "value": "#6f4b2d",
+        "type": "color"
+      },
+      "10": {
+        "value": "#5e3a21",
+        "type": "color"
+      },
+      "11": {
+        "value": "#4e2b15",
+        "type": "color"
+      },
+      "12": {
+        "value": "#422412",
+        "type": "color"
+      }
+    },
+    "gray": {
+      "0": {
+        "value": "#f8f9fa",
+        "type": "color"
+      },
+      "1": {
+        "value": "#f1f3f5",
+        "type": "color"
+      },
+      "2": {
+        "value": "#e9ecef",
+        "type": "color"
+      },
+      "3": {
+        "value": "#dee2e6",
+        "type": "color"
+      },
+      "4": {
+        "value": "#ced4da",
+        "type": "color"
+      },
+      "5": {
+        "value": "#adb5bd",
+        "type": "color"
+      },
+      "6": {
+        "value": "#868e96",
+        "type": "color"
+      },
+      "7": {
+        "value": "#495057",
+        "type": "color"
+      },
+      "8": {
+        "value": "#343a40",
+        "type": "color"
+      },
+      "9": {
+        "value": "#212529",
+        "type": "color"
+      },
+      "10": {
+        "value": "#16191d",
+        "type": "color"
+      },
+      "11": {
+        "value": "#0d0f12",
+        "type": "color"
+      },
+      "12": {
+        "value": "#030507",
+        "type": "color"
+      }
+    }
+  }
+}
