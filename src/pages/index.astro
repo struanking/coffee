@@ -1,13 +1,13 @@
 ---
-import { getCollection } from "astro:content";
-import { client } from "../../tina/__generated__/client";
-import AutoGrid from "../components/auto-grid.astro";
-import BaseLayout from "../layouts/base.astro";
+import { getCollection } from 'astro:content';
+import { client } from '../../tina/__generated__/client';
+import AutoGrid from '../components/auto-grid.astro';
+import BaseLayout from '../layouts/base.astro';
 
 // const coffeesResponse = await client.queries.coffeeConnection();
 // const coffees = coffeesResponse.data.coffeeConnection.edges;
 // const coffees = [];
-const coffees = await getCollection("coffee");
+const coffees = await getCollection('coffee');
 console.log(coffees);
 ---
 
