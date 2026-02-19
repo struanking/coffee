@@ -13,9 +13,9 @@
     "prepare": "husky"
   },
   "dependencies": {
-    "@tailwindcss/vite": "^4.1.18",
+    "@tailwindcss/vite": "^4.2.0",
     "astro": "6.0.0-beta.9",
-    "tailwindcss": "^4.1.18",
+    "tailwindcss": "^4.2.0",
     "tinacms": "^3.4.1"
   },
   "devDependencies": {
