@@ -7,21 +7,24 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "lint": "exec biome check",
-    "lint:fix": "exec biome check --write",
-    "lint:staged": "exec biome check --staged --write --no-errors-on-unmatched",
-    "prepare": "husky"
+    "lint": "biome check",
+    "lint:fix": "biome check --write",
+    "lint:staged": "biome check --staged --write --no-errors-on-unmatched",
+    "prepare": "husky",
+    "knip": "knip",
+    "knip:deps": "knip --include dependencies"
   },
   "dependencies": {
-    "@tailwindcss/vite": "^4.2.1",
     "astro": "6.0.0-beta.17",
-    "tailwindcss": "^4.2.1",
     "tinacms": "^3.5.1"
   },
   "devDependencies": {
     "@biomejs/biome": "2.4.3",
+    "@sugarcube-sh/vite": "^0.0.4",
     "@tinacms/cli": "^2.1.6",
     "@types/node": "^25.3.0",
-    "husky": "^9.1.7"
+    "husky": "^9.1.7",
+    "knip": "^5.85.0",
+    "typescript": "^5.9.3"
   }
 }
