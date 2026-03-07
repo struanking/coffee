@@ -21,7 +21,13 @@
       ]
     },
     "mono": {
-      "$value": ["SFMono-Regular", "Consolas", "Liberation Mono", "Menlo", "monospace"]
+      "$value": [
+        "SFMono-Regular",
+        "Consolas",
+        "Liberation Mono",
+        "Menlo",
+        "monospace"
+      ]
     },
     "serif": {
       "$value": ["Georgia", "Cambria", "Times New Roman", "Times", "serif"]
