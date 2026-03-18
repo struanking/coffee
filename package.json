@@ -15,8 +15,8 @@
     "knip:deps": "knip --include dependencies"
   },
   "dependencies": {
-    "astro": "6.0.0-beta.17",
-    "tinacms": "^3.6.1"
+    "astro": "6.0.5",
+    "tinacms": "^3.6.2"
   },
   "devDependencies": {
     "@biomejs/biome": "2.4.6",
